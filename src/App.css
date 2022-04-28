@@ -21,3 +21,9 @@
   height: 550px;
   width: 550px;
 }
+
+.logout{
+  position: fixed;
+  right: 25px;
+  top: 25px;
+}
