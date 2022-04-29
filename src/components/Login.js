@@ -1,14 +1,14 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
-export const AuthRouter = () => {
+export const Login = () => {
     let navigate = useNavigate();
     const handleRouteChange = () => {
     navigate('/shop');
     }
 
   return (
-    <div  className="container">
+    <div  className="container-log ">
      {/* <div className="row w-100 align-items-center">
      <div className="col text-center">
             <button 
@@ -17,6 +17,10 @@ export const AuthRouter = () => {
             
         </div>
             </div> */}
+    <div className='vh-100 align-items-center justify-content-center'>
+    <div className='my-5'>
+
+    
 <form>
     <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
 
@@ -39,6 +43,8 @@ export const AuthRouter = () => {
     className="w-100 btn btn-lg btn-dark" type="submit">Sign in</button>
     <p className="mt-5 mb-3 text-muted">Rick M.C. Music ©</p>
   </form>
+  </div>
+  </div>
     </div>
   )
 }

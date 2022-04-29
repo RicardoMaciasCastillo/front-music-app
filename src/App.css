@@ -1,29 +1,58 @@
-.nav{
+.nav {
   width: 100%;
   height: 200px;
   display: inline-flex;
   padding: 50px;
   justify-content: center;
   font-size: 50px;
-  
-  
+
+
 }
 
 
-.div1{
+.div1 {
 
-  
+
   padding: 300px;
 }
 
-.imagen{
-  text-align : center;
+.imagen {
+  text-align: center;
   height: 550px;
   width: 550px;
 }
 
-.logout{
+.logout {
   position: fixed;
   right: 25px;
   top: 25px;
+}
+
+.container-log {
+  display: flex;
+  ;
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(21, 23, 20, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(54, 55, 54, 0.6);
+  outline: 0 none;
 }

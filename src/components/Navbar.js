@@ -1,15 +1,15 @@
 import React from 'react'
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import image from '../assets/2022476 (2).svg'
 
 
 const Navbar = () => {
-  // const navigate = useNavigate()
-  // const handleLogout = () => {
-  //     navigate('/auth',{
-  //         replace:true
-  //     })
-  // }
+  const navigate = useNavigate()
+  const handleLogout = () => {
+      navigate('/login',{
+          replace:true
+      })
+  }
 
   return (
       <>
@@ -20,7 +20,7 @@ const Navbar = () => {
     </div>
     
     <button
-      // onClick={handleLogout}
+       onClick={handleLogout}
         className="btn btn-dark logout"
      
         >
