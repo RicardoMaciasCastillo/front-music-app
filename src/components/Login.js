@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../auth/authContext';
+import { types } from "../types/types";
 
 export const Login = () => {
+    const {dispatch} = useContext(AuthContext)
     let navigate = useNavigate();
     const handleRouteChange = () => {
-    navigate('/shop');
+
+        const action =  {
+          type: types.login,
+          payload: { name: 'Ricardo',}
+        }
+        dispatch(action)
+        navigate('/shop',{
+          replace:true
+        });
     }
 
   return (
@@ -22,15 +33,18 @@ export const Login = () => {
 
     
 <form>
-    <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
-
+    <h1 className="h3 mb-3 fw-normal text-center fw-bolder">Please sign in.</h1>
     <div className="form-floating">
-      <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
-      <label for="floatingInput">Email address</label>
+      <input type="name" className="form-control" id="nameInput" placeholder="Name"/>
+      <label htmlFor="floatingInput">Name</label>
+    </div>
+    <div className="form-floating">
+      <input type="email" className="form-control" id="emailInput" placeholder="name@example.com"/>
+      <label htmlFor="floatingInput">Email</label>
     </div>
     <div className="form-floating">
       <input type="password" className="form-control" id="floatingPassword" placeholder="Password"/>
-      <label for="floatingPassword">Password</label>
+      <label htmlFor="floatingPassword">Password</label>
     </div>
 
     <div className="checkbox mb-3">

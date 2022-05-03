@@ -1,14 +1,23 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import React, { useContext } from 'react'
 import image from '../assets/2022476 (2).svg'
+import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../auth/authContext';
+import { types } from '../types/types';
 
 
 const Navbar = () => {
+
+  const {user,dispatch} = useContext(AuthContext)
+
   const navigate = useNavigate()
   const handleLogout = () => {
-      navigate('/login',{
-          replace:true
-      })
+    
+    const action =  {
+        type: types.logout,
+        
+      }
+      dispatch(action)
+      navigate('/login')
   }
 
   return (
@@ -26,6 +35,7 @@ const Navbar = () => {
         >
             Logout
         </button>
+        <span className='loggedUser'> {user.name} </span>
 
   
         <hr />
