@@ -22,15 +22,23 @@
   width: 550px;
 }
 
+.imagen-2 {
+  justify-content: center;
+  height: 400px;
+  width: 450px;
+  display: block;
+  margin: auto;
+}
+
 .logout {
   position: fixed;
   right: 25px;
-  top: 25px;
+  top: 70px;
 }
 .loggedUser {
   position: fixed;
   right: 110px;
-  top: 22px;
+  top:  68px;
   font-weight: 700;
   font-size: 25px;
 
@@ -42,6 +50,13 @@
   margin-top: 200px;
   justify-content: center;
   align-items: center
+}
+.navbar-item1{
+  position: fixed;
+  left: 10px;
+  top: 140px;
+  font-weight: 700;
+  font-size: 25px;
 }
 
 textarea:focus,
