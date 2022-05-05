@@ -13,7 +13,6 @@ export const SongsRoutes = () => {
         <Routes>
         <Route path="/reproductor" element={<Reproductor />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/" element={<Reproductor />} />
         <Route path="/about" element={<About />}     />
     </Routes>
     </>

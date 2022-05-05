@@ -35,7 +35,7 @@ const Navbar = () => {
         <Link to="/reproductor" className="nav-link">Player |</Link> 
       </li> 
       <li  className="nav-item">
-        <Link to="/shop" className="nav-link">Artists |</Link>
+        <Link to="/shop" className="nav-link">Albums |</Link>
       </li>
       <li  className="nav-item">
         <Link to="/shop" className="nav-link">Shop |</Link>
