@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../auth/authContext';
 import { types } from "../types/types";
 
-export const Login = () => {
+export const LoginScreen = () => {
     const {dispatch} = useContext(AuthContext)
     let navigate = useNavigate();
     const handleRouteChange = () => {
@@ -33,11 +33,8 @@ export const Login = () => {
 
     
 <form>
-    <h1 className="h3 mb-3 fw-normal text-center fw-bolder">Please sign in.</h1>
-    <div className="form-floating">
-      <input type="name" className="form-control" id="nameInput" placeholder="Name"/>
-      <label htmlFor="floatingInput">Name</label>
-    </div>
+    <h1 className="h3 mb-3 fw-normal text-center fw-bolder">Log in.</h1>
+
     <div className="form-floating">
       <input type="email" className="form-control" id="emailInput" placeholder="name@example.com"/>
       <label htmlFor="floatingInput">Email</label>
@@ -54,7 +51,10 @@ export const Login = () => {
     </div>
     <button 
      onClick={handleRouteChange}
-    className="w-100 btn btn-lg btn-dark" type="submit">Sign in</button>
+    className="w-100 btn btn-lg btn-dark" type="submit">Log in</button>
+
+            <br />
+    <Link to="/signin"><p><br></br>Please create a personal account</p></Link>
     <p className="mt-5 mb-3 text-muted">Rick M.C. Music ©</p>
   </form>
   </div>
