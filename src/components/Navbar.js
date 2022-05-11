@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../auth/authContext';
 import { types } from '../types/types';
 import { Link } from "react-router-dom";
-import PlayCircleOutlineTwoToneIcon from '@mui/icons-material/PlayCircleOutlineTwoTone';
+// import PlayCircleOutlineTwoToneIcon from '@mui/icons-material/PlayCircleOutlineTwoTone';
 import LibraryMusicTwoToneIcon from '@mui/icons-material/LibraryMusicTwoTone';
 import InfoTwoToneIcon from '@mui/icons-material/InfoTwoTone';
 import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
@@ -37,11 +37,11 @@ const Navbar = () => {
   <div  className="collapse navbar-collapse" id="navbarNavDropdown">
     <ul className="navbar-nav mx-3">
 
-      <li className="nav-item active">
+      {/* <li className="nav-item active">
         <Link to="/reproductor" className="nav-link"><PlayCircleOutlineTwoToneIcon/> Player |</Link> 
-      </li> 
+      </li>  */}
       <li  className="nav-item">
-        <Link to="/shop" className="nav-link"><LibraryMusicTwoToneIcon /> Albums |</Link>
+        <Link to="/shop" className="nav-link"><LibraryMusicTwoToneIcon /> Artists |</Link>
       </li>
       <li  className="nav-item">
         <Link to="/shop" className="nav-link"><ShoppingCartTwoToneIcon />  Shop |</Link>
